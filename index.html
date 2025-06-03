@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameKey — Проєкт КРОК</title>
+    <style>
+      :root {
+        --blue: #005bbb;
+        --yellow: #ffd500;
+        --text-dark: #1c1c1c;
+        --bg-light: #f9f9f9;
+        --white: #ffffff;
+        --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: var(--bg-light);
+        color: var(--text-dark);
+        line-height: 1.6;
+      }
+
+      header {
+        background: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        box-shadow: var(--shadow);
+      }
+
+      header img {
+        height: 60px;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+        color: var(--blue);
+        margin-left: 1rem;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 3rem 1rem;
+      }
+
+      .card {
+        background: var(--white);
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: var(--shadow);
+        margin-bottom: 2rem;
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-4px);
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+        color: var(--blue);
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        padding-left: 1.2rem;
+        text-align: left;
+      }
+
+      ul li {
+        margin-bottom: 0.5rem;
+      }
+
+      .buyer-img {
+        display: block;
+        margin: 2rem auto 0;
+        max-width: 300px;
+        border-radius: 1rem;
+      }
+
+      footer {
+        background: var(--blue);
+        color: var(--white);
+        text-align: center;
+        padding: 2rem 1rem;
+        margin-top: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div style="display: flex; align-items: center">
+        <img
+          src="https://www.krok.edu.ua/download/brand-book/144%D1%85144-logo-krok.png"
+          alt="Логотип КРОК"
+        />
+        <h1>GameKey — цифрова комерція майбутнього</h1>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2 class="section-title">Про проєкт</h2>
+        <p>
+          GameKey — це інноваційна онлайн-платформа, яка дозволяє швидко,
+          безпечно та вигідно купувати цифрові ключі до ігор. Вона створена в
+          рамках кваліфікаційної роботи студента Університету "КРОК".
+        </p>
+      </section>
+
+      <section class="card">
+        <h2 class="section-title">Цілі розробки</h2>
+        <ul>
+          <li>Простий та інтуїтивно зрозумілий інтерфейс.</li>
+          <li>Безпечна інтеграція з платіжними системами.</li>
+          <li>Автоматизована доставка ключів після покупки.</li>
+          <li>Підтримка та обслуговування користувачів.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2 class="section-title">Переваги платформи</h2>
+        <ul>
+          <li>Миттєва доставка ігрових ключів.</li>
+          <li>Захист персональних даних користувачів.</li>
+          <li>Система рейтингів та відгуків.</li>
+          <li>Мобільна адаптація та швидкодія.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2 class="section-title">Технології</h2>
+        <ul>
+          <li><strong>React</strong> — фронтенд-інтерфейс користувача.</li>
+          <li><strong>Node.js</strong> + <strong>Express</strong> — бекенд.</li>
+          <li><strong>MongoDB</strong> — база даних.</li>
+          <li><strong>Stripe</strong> — платіжна інтеграція.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2 class="section-title">Задоволений покупець</h2>
+        <p>
+          Ми віримо, що кожен геймер заслуговує на простий і приємний досвід
+          покупок. Саме тому клієнтоорієнтованість — наше головне завдання.
+        </p>
+        <img
+          class="buyer-img"
+          src="a6f7db08-6691-4955-a846-a2198a52050c.png"
+          alt="Задоволений покупець"
+        />
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2025 GameKey. Проєкт виконано в рамках кваліфікаційної роботи
+      студента Університету "КРОК".
+    </footer>
+  </body>
+</html>
