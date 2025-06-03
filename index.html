@@ -9,7 +9,7 @@
         --blue: #005bbb;
         --yellow: #ffd500;
         --text-dark: #1c1c1c;
-        --bg-light: #f9f9f9;
+        --bg-light: #ffffff;
         --white: #ffffff;
         --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       }
@@ -22,7 +22,11 @@
 
       body {
         font-family: "Segoe UI", sans-serif;
-        background: var(--bg-light);
+        background: linear-gradient(
+          to bottom right,
+          var(--blue),
+          var(--yellow)
+        );
         color: var(--text-dark);
         line-height: 1.6;
       }
@@ -85,11 +89,12 @@
         margin: 2rem auto 0;
         max-width: 300px;
         border-radius: 1rem;
+        box-shadow: 0 0 10px rgba(0, 91, 187, 0.4);
       }
 
       footer {
         background: var(--blue);
-        color: var(--white);
+        color: var(--yellow);
         text-align: center;
         padding: 2rem 1rem;
         margin-top: 3rem;
